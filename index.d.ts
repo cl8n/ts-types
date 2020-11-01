@@ -6,13 +6,13 @@ export type Key = keyof any;
 /**
  * Dictionary mapping keys to values.
  */
-export type Dictionary<T, K extends Key = string> = {
-  [P in K]?: T;
+export type Dictionary<V, K extends Key = string> = {
+  [P in K]?: V;
 };
 
 /**
  * Dictionary mapping keys to values or nested dictionaries.
  */
-export type DeepDictionary<T, K extends Key = string> = {
-  [P in K]?: T | DeepDictionary<T, K>;
+export type DeepDictionary<V, K extends Key = string> = {
+  [P in K]?: V | DeepDictionary<V, K>;
 };
