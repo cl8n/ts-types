@@ -18,16 +18,7 @@
   ],
   "rules": {
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-type-alias": [
-      "error",
-      {
-        "allowAliases": "in-unions-and-intersections",
-        "allowConditionalTypes": "always",
-        "allowLiterals": "in-unions-and-intersections",
-        "allowMappedTypes": "always",
-        "allowTupleTypes": "always"
-      }
-    ],
+    "@typescript-eslint/no-type-alias": "off",
     "@typescript-eslint/prefer-readonly-parameter-types": [
       "error",
       { "ignoreInferredTypes": true }
