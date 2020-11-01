@@ -11,8 +11,5 @@ npm install -D @cl8n/types
 ## Usage
 
 ```typescript
-import type {
-  Dictionary,
-  DeepDictionary,
-} from '@cl8n/types'
+import type { DeepDictionary, /* ... */ } from '@cl8n/types';
 ```
