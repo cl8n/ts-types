@@ -1,0 +1,42 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/all",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "tsdoc"
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-type-alias": [
+      "error",
+      {
+        "allowAliases": "in-unions-and-intersections",
+        "allowConditionalTypes": "always",
+        "allowLiterals": "in-unions-and-intersections",
+        "allowMappedTypes": "always",
+        "allowTupleTypes": "always"
+      }
+    ],
+    "@typescript-eslint/prefer-readonly-parameter-types": [
+      "error",
+      { "ignoreInferredTypes": true }
+    ],
+    "@typescript-eslint/quotes": [
+      "error",
+      "single",
+      { "avoidEscape": true, "allowTemplateLiterals": false }
+    ],
+    "tsdoc/syntax": "warn"
+  }
+}
