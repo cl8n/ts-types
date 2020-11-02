@@ -27,13 +27,13 @@ export type Empty<T> = T extends boolean
   ? 0
   : T extends string
   ? ''
+  : T extends null | undefined
+  ? T
   : T extends unknown[]
   ? []
-  : T extends Record<infer K, unknown>
-  ? {
-      [P in K]: Empty<T[P]>;
-    }
-  : T;
+  : {
+      [P in keyof T]: Empty<T[P]>;
+    };
 
 /**
  * Key of an object.
