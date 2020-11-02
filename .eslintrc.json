@@ -13,11 +13,9 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "plugins": [
-    "tsdoc"
-  ],
   "rules": {
     "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-magic-numbers": "off",
     "@typescript-eslint/no-type-alias": "off",
     "@typescript-eslint/prefer-readonly-parameter-types": [
       "error",
@@ -27,7 +25,6 @@
       "error",
       "single",
       { "avoidEscape": true, "allowTemplateLiterals": false }
-    ],
-    "tsdoc/syntax": "warn"
+    ]
   }
 }
