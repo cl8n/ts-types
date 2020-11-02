@@ -1,6 +1,6 @@
 {
   "name": "@cl8n/types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "clayton <me@clayton.cc>",
   "bugs": "https://github.com/cl8n/ts-types/issues",
   "description": "TypeScript types shared among my projects",
